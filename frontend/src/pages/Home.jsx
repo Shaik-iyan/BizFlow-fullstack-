@@ -1,6 +1,4 @@
-
 import { useEffect, useState } from "react";
-
 import ProductCard from "../components/ProductCard";
 import { getProducts } from "../services/productService";
 import { useCart } from "../hooks/useCart";
@@ -11,9 +9,6 @@ function Home() {
   const [error, setError] = useState("");
 
   const { addToCart } = useCart();
-
-
-  
   useEffect(() => {
     async function loadProducts() {
       try {
